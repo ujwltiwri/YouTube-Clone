@@ -18,7 +18,7 @@ header {
   background-color: #ffffff;
 }
 
-.logo{
+.logo {
   margin-left: 20px;
 }
 
@@ -54,12 +54,25 @@ input[type="text"] {
   font-size: 16px;
 }
 
-input:focus
-{
-    border: 1px solid blue;
-    box-shadow: 0 0 1px #1670BE;
-    outline-offset: 0px;
-    outline: none;
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 0 0 1px #1670be;
+  outline-offset: 0px;
+  outline: none;
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#profile img {
+  margin-left: 20px;
+  border-radius: 20px;
+  height: 35px;
+  width: 35px;
 }
 
 #button {
@@ -69,6 +82,8 @@ input:focus
   align-items: center;
   width: 64px;
   margin-right: 10px;
+  border: 1px solid #e5e5e5;
+  border-left: none;
 }
 
 #voice {
@@ -179,13 +194,18 @@ a {
 .title {
   display: flex;
   justify-content: flex-start;
+  font-weight: 600;
+}
+
+.inside {
+  margin-top: 20px;
 }
 
 .channel-name,
 .views {
   margin-left: 38px;
   font-size: 14px;
-  font-weight: 600;
+  margin-top: 10px;
 }
 
 /* scrollbar */
@@ -212,6 +232,16 @@ a {
 }
 
 @media screen and (max-width: 640px) {
+  .logo {
+    margin: 0;
+    margin-right: 20px;
+  }
+
+  #voice {
+    margin-left: 20px;
+    display: none;
+  }
+
   .left-side {
     display: none;
   }
@@ -231,5 +261,9 @@ a {
 
   .videos .youtube-videos {
     justify-content: center;
+  }
+
+  #profile {
+    display: flex;
   }
 }
