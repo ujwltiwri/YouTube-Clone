@@ -151,18 +151,6 @@ a {
   width: 95%;
 }
 
-/* .left-side ul li:hover{
-  background-color: #E5E5E5;
-}
-
-.left-side ul li a:hover{
-  background-color: #E5E5E5;
-}
-
-.material-icons:hover{
-  background-color: #E5E5E5;
-} */
-
 .videos {
   /* display: flex; */
   justify-content: flex-start;
