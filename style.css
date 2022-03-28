@@ -18,6 +18,10 @@ header {
   background-color: #ffffff;
 }
 
+.logo{
+  margin-left: 20px;
+}
+
 header ul {
   display: flex;
   list-style-type: none;
@@ -50,6 +54,14 @@ input[type="text"] {
   font-size: 16px;
 }
 
+input:focus
+{
+    border: 1px solid blue;
+    box-shadow: 0 0 1px #1670BE;
+    outline-offset: 0px;
+    outline: none;
+}
+
 #button {
   background-color: #f8f8f8;
   display: flex;
@@ -60,10 +72,18 @@ input[type="text"] {
 }
 
 #voice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f9f9f9;
   padding: 9px;
   height: 43px;
   border-radius: 20px;
+}
+
+#voice .material-icons,
+#button .material-icons {
+  margin-right: 0;
 }
 
 /* header part end */
@@ -97,11 +117,11 @@ a {
 }
 
 .left-side ul li {
-  padding: 10px;
-  /* display: flex; */
+  padding: 7px;
   font-size: 16px;
   margin-left: 10px;
   cursor: pointer;
+  line-height: 26px;
 }
 
 .text {
@@ -196,20 +216,20 @@ a {
     display: none;
   }
 
-  header ul{
+  header ul {
     display: none;
   }
 
-  header .searchbox{
+  header .searchbox {
     width: 100%;
     margin-right: 10px;
   }
 
-  .videos{
+  .videos {
     margin: 0;
   }
 
-  .videos .youtube-videos{
+  .videos .youtube-videos {
     justify-content: center;
   }
 }
