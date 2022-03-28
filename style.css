@@ -137,6 +137,11 @@ a {
   margin-left: 10px;
   cursor: pointer;
   line-height: 26px;
+  margin-right: 10px;
+}
+
+.left-side ul li:hover {
+  background-color: #eeeded;
 }
 
 .text {
@@ -165,7 +170,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* padding: 20px; */
 }
 
 .videos .youtube-videos .video-container {
