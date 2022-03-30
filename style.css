@@ -175,7 +175,7 @@ a {
 .videos .youtube-videos .video-container {
   flex-grow: 1;
   flex-basis: 0;
-  margin-right: 10px;
+  margin: 0 5px;
   margin-bottom: 30px;
 }
 
@@ -224,11 +224,6 @@ a {
   .left-side {
     width: 25%;
   }
-
-  .videos {
-    margin: 0;
-    /* padding: 2em; */
-  }
 }
 
 @media screen and (max-width: 640px) {
@@ -257,6 +252,9 @@ a {
 
   .videos {
     margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    border-top: none;
   }
 
   #profile {
