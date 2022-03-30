@@ -173,7 +173,11 @@ a {
 }
 
 .videos .youtube-videos .video-container {
-  width: 359px;
+  /* width: 359px; */
+  flex-grow: 1;
+  flex-basis: 0;
+  /* padding: 10px; */
+  margin-right: 10px;
   margin-bottom: 30px;
 }
 
@@ -211,6 +215,12 @@ a {
   border-radius: 10px;
 }
 
+.video-image {
+  width: 100%;
+  height: auto;
+  min-width: 250px;
+}
+
 /* media queries for small devices */
 @media screen and (min-width: 641px) and (max-width: 1024px) {
   .left-side {
@@ -219,7 +229,7 @@ a {
 
   .videos {
     margin: 0;
-    padding: 2em;
+    /* padding: 2em; */
   }
 }
 
@@ -249,10 +259,6 @@ a {
 
   .videos {
     margin: 0;
-  }
-
-  .videos .youtube-videos {
-    justify-content: center;
   }
 
   #profile {
